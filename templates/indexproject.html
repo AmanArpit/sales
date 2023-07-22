@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Classification</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+    background-image: linear-gradient(to bottom, pink,purple);
+  }
+#a{
+    text-align: center;
+}
+h1{
+    text-align: center;
+    text-decoration: underline;
+}
+form{
+    text-size-adjust: 20px;
+}
+    </style>
+
+</head>
+<body>
+    <h1>VG SALES</h1><br>
+    <div id="a">
+    <form action="/predict" method="post">
+
+
+        <br>
+
+        NA_sales<input type="text" name="inflight_entertainment" id="inflight_entertainment"><br><br>
+        EU_sales<input type="text" name="online_support" id="online_support"><br><br>
+        JP_sales<input type="text" name="ease_of_online_book" id="ease_of_online_book"><br><br>
+        Other_Sales<input type="text" name="onboard_service" id="onboard_service"><br><br>
+
+
+      
+        <br>
+
+        <h2><input type="submit" value="submit"></h2>
+    </form>
+        {{ prediction_text }}
+</div>
+
+</body>
+</html>
